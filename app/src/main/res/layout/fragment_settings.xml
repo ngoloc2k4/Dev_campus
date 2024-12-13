@@ -1,216 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
->>>>>>> origin/demo1
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="16dp">
-
-    <!-- Profile Avatar -->
-    <ImageView
-        android:id="@+id/ivProfileAvatar"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/ic_profile"
-        android:contentDescription="Profile Avatar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Edit Profile Picture Icon -->
-    <ImageView
-        android:id="@+id/ivEditProfilePicture"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_edit"
-        android:contentDescription="Edit Profile Picture"
-        app:layout_constraintTop_toBottomOf="@id/ivProfileAvatar"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="8dp"/>
-
-    <!-- Full Name Input -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilFullName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/ivProfileAvatar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etFullName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Full Name" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- Email Input -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tilFullName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- Current Password -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilCurrentPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tilEmail"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etCurrentPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Current Password" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- New Password -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilNewPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tilCurrentPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etNewPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="New Password" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- Confirm Password -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilConfirmPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tilNewPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etConfirmPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Confirm Password" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- Budget Notification Slider -->
-    <SeekBar
-        android:id="@+id/sliderBudgetNotification"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tilConfirmPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:max="100"/>
-
-    <!-- Budget Notification Percentage Text -->
-    <TextView
-        android:id="@+id/tvBudgetNotificationPercent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0%"
-        app:layout_constraintTop_toBottomOf="@id/sliderBudgetNotification"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"/>
-
-    <!-- Budget Limit -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilBudgetLimit"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tvBudgetNotificationPercent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etBudgetLimit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Budget Limit" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- Enable Notifications -->
-    <Switch
-        android:id="@+id/switchNotifications"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enable Notifications"
-        app:layout_constraintTop_toBottomOf="@id/tilBudgetLimit"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp" />
-
-    <!-- Change Password Button -->
-    <Button
-        android:id="@+id/btnChangePassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Change Password"
-        app:layout_constraintTop_toBottomOf="@id/switchNotifications"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
-
-    <!-- Save Settings Button -->
-    <Button
-        android:id="@+id/btnSaveSettings"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Save Settings"
-        app:layout_constraintTop_toBottomOf="@id/btnChangePassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
-
-    <!-- Manage Categories Button -->
-    <Button
-        android:id="@+id/btnManageCategories"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Manage Categories"
-        app:layout_constraintTop_toBottomOf="@id/btnSaveSettings"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
-
-    <!-- Logout Button -->
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Logout"
-        app:layout_constraintTop_toBottomOf="@id/btnManageCategories"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-=======
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -232,14 +19,6 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="16dp">
 
-<<<<<<< HEAD
-            <ImageView
-                android:id="@+id/ivProfilePicture"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:src="@drawable/ic_profile"
-                android:background="@drawable/circular_background_primary"/>
-=======
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/ivProfileAvatar"
                 android:layout_width="match_parent"
@@ -247,17 +26,12 @@
                 android:src="@drawable/default_profile"
                 app:civ_border_width="2dp"
                 app:civ_border_color="@color/primary_blue"/>
->>>>>>> origin/demo1
 
             <ImageView
                 android:id="@+id/ivEditProfilePicture"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-<<<<<<< HEAD
-                android:src="@drawable/ic_edit"
-=======
                 android:src="@drawable/ic_edit_pencil"
->>>>>>> origin/demo1
                 android:background="@drawable/circular_background_primary"
                 android:padding="8dp"
                 android:layout_gravity="bottom|end"/>
@@ -407,8 +181,3 @@
             app:iconGravity="textStart"/>
     </LinearLayout>
 </ScrollView>
-<<<<<<< HEAD
->>>>>>> lobi_ver
-=======
->>>>>>> Stashed changes
->>>>>>> origin/demo1
