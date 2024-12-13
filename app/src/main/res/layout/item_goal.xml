@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.7"
             android:text="Goal Name"
-            android:textColor="@color/primary_blue"
+            android:textColor="@color/primary_dark"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:progress="50"
-        android:progressTint="@color/primary_blue"
+        android:progressTint="@color/primary_dark"
         android:progressBackgroundTint="@color/light_gray" />
 
     <TextView
