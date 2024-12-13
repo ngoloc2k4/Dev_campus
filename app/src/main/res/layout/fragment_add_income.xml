@@ -88,7 +88,6 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="8dp"
                 android:text="Add Income"
-<<<<<<< Updated upstream
                 android:backgroundTint="@color/primary_color"/>
 
             <Button
@@ -100,10 +99,6 @@
                 android:text="Cancel"
                 android:backgroundTint="@color/secondary_color"
                 android:textColor="@color/primary_text"/>
-=======
-                android:backgroundTint="@color/black"/>
-
->>>>>>> Stashed changes
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
